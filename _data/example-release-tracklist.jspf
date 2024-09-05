@@ -1,0 +1,19 @@
+{
+  "playlist": {
+    "title": "example-release",
+    "track": [
+      {
+        "location": "releases/example-release/flying-guitar.mp3",
+        "title": "flying-guitar"
+      },
+      {
+        "location": "releases/example-release/juno-pulse.mp3",
+        "title": "juno-pulse"
+      },
+      {
+        "location": "releases/example-release/minimoog-bass.mp3",
+        "title": "minimoog-bass"
+      }
+    ]
+  }
+}

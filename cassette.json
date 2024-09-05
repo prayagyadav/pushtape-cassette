@@ -1,22 +1,28 @@
 {
-  "lastBuild": {},
+  "lastBuild": "2024-09-05 14:05:06.892123+00:00",
   "pages": {
-     "releases" : {},
-     "about" : {"location" : "pages/about.md"},
-     "shows" : {"location" : "pages/shows.md"}
+    "about": {
+      "location": "pages/about.md",
+      "title": "about"
+    },
+    "releases": {},
+    "shows": {
+      "location": "pages/shows.md",
+      "title": "shows"
+    }
   },
   "releases": {
     "example-release": {
-      "title" : "Cosmic Voyage",
-      "playlist" : "releases/example-release/tracklist.jspf",
-      "artwork" : "releases/example-release/artwork.jpg",
-      "notes" : "releases/example-release/notes.md"  
+      "artwork": "releases/example-release/artwork.jpg",
+      "notes": "releases/example-release/notes.md",
+      "playlist": "_data/example-release-tracklist.jspf",
+      "title": "example-release"
     },
     "example-release-two": {
-      "title" : "Bird Life",
-      "playlist" : "releases/example-release-two/tracklist.jspf",
-      "artwork" : "releases/example-release-two/artwork.jpg",
-      "notes" : "releases/example-release-two/notes.md"  
+      "artwork": "releases/example-release-two/artwork.jpg",
+      "notes": "releases/example-release-two/notes.md",
+      "playlist": "_data/example-release-two-tracklist.jspf",
+      "title": "example-release-two"
     }
   }
 }

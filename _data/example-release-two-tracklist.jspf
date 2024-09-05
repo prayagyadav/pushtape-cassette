@@ -1,0 +1,27 @@
+{
+  "playlist": {
+    "title": "example-release-two",
+    "track": [
+      {
+        "location": "releases/example-release-two/flapping-bird.mp3",
+        "title": "flapping-bird"
+      },
+      {
+        "location": "releases/example-release-two/marsh-rain-birds-thunder.mp3",
+        "title": "marsh-rain-birds-thunder"
+      },
+      {
+        "location": "releases/example-release-two/mockingbird.mp3",
+        "title": "mockingbird"
+      },
+      {
+        "location": "releases/example-release-two/morningbogfrogs.mp3",
+        "title": "morningbogfrogs"
+      },
+      {
+        "location": "releases/example-release-two/whip-birds.mp3",
+        "title": "whip-birds"
+      }
+    ]
+  }
+}
