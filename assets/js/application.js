@@ -9,7 +9,7 @@ if (typeof app == "undefined") {
   var app = {};
   app.settings = {
     cassettePath: "cassette.json", // Path to cassette.json
-    cleanURLs: false, // if true, # will be removed from URL paths
+    cleanURLs: true, // if true, # will be removed from URL paths
     homePage: "releases", // Default menu route for homepage
   };
 }
@@ -23,7 +23,7 @@ if (typeof app == "undefined") {
     externalMenuItem:
       '<li><a target="_blank" href="{{pageURL}}">{{pageTitle}}</a></li>',
     playAll:
-      '<a class="pt-play-all" href="#" title="Play/Pause"><span class="play-btn"><i class="fa fa-play"></i></span><span class="pause-btn"><i class="fa fa-pause"></i></span></a>',
+      '<a class="pt-play-all" href="/" title="Play/Pause"><span class="play-btn"><i class="fa fa-play"></i></span><span class="pause-btn"><i class="fa fa-pause"></i></span></a>',
   };
 
   // The following line disables browser caching
