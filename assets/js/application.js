@@ -38,7 +38,7 @@ if (typeof app == "undefined") {
       "Fatal error. Could not load cassette.json." + "(" + status + ")",
     );
     console.log(json);
-    $("#content").html(
+    $("content").html(
       "<h1>Error</h1> Problem loading cassette.json. Check that the path exists and is accessible from your domain, and that your JSON/JSONP is formatted correctly.",
     );
   });
@@ -63,7 +63,7 @@ if (typeof app == "undefined") {
       },
       {
         pages: {
-          dom: "#main-menu",
+          dom: "main-menu",
           transform: function (value) {
             var output;
             var variables = {};
@@ -88,7 +88,7 @@ if (typeof app == "undefined") {
           },
         },
         contentHTML: {
-          dom: "#content",
+          dom: "content",
           transform: function (value) {
             // Run through markdown parser
             return marked(value);
@@ -106,11 +106,11 @@ if (typeof app == "undefined") {
       router.navigate(String($(this).attr("href")));
     });
     $("body").on("click", "a[data-navigo], .navigo-delegate", function (e) {
-      $("#main-menu li a").removeClass("active");
+      $("main-menu li a").removeClass("active");
       $(this).addClass("active");
     });
     $("body").on("click", ".mobile-menu-toggle", function () {
-      $("#main-menu").toggleClass("hide");
+      $("main-menu").toggleClass("hide");
     });
 
     /**
@@ -304,7 +304,7 @@ if (typeof app == "undefined") {
               var key = Object.keys(data)[0];
               binding.contentHTML = data[key];
               document.title = docTitle + " | " + decodeURI(index);
-              $("#main-menu li a").removeClass("active");
+              $("main-menu li a").removeClass("active");
               $('a[href="' + String(index) + '"]').addClass("active");
             })
             .fail(function (data, status) {
@@ -318,7 +318,7 @@ if (typeof app == "undefined") {
               window.scrollTo(0, 0);
               binding.contentHTML = data;
               document.title = docTitle + " | " + decodeURI(index);
-              $("#main-menu li a").removeClass("active");
+              $("main-menu li a").removeClass("active");
               $('a[href="' + String(index) + '"]').addClass("active");
             })
             .fail(function (data, status) {
@@ -345,7 +345,7 @@ if (typeof app == "undefined") {
         binding.contentHTML = "<h1>:-/</h1> No releases were found.";
       }
       document.title = docTitle + " | " + "releases";
-      $("#main-menu li a").removeClass("active");
+      $("main-menu li a").removeClass("active");
       $('a[href="releases"]').addClass("active");
     };
     // Setup routes for releases
